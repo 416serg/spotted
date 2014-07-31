@@ -1,0 +1,25 @@
+<head>
+	<title>spotted</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  	{{> hello}}
+</body>
+
+<template name="hello">
+  	<div class="container fluid">
+  		<div class="row fluid">
+  			<div class="span12">
+  				{{> map}}
+  			</div>
+  		</div>
+  	</div>
+</template>
+
+<template name="map">
+	<h1 class="title">Spotted</h1>
+	<div id="map" class="map"></div>
+</template>

@@ -1,3 +1,10 @@
+$(function() {
+  $(window).resize(function() {
+    $('#map').css('height', window.innerHeight - 82 - 45);
+  });
+  $(window).resize(); // trigger resize event
+});
+
 if (Meteor.isClient) {
   Template.hello.greeting = function () {
     return "Welcome to spotted.";
